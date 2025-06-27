@@ -13,7 +13,7 @@ bool InternetReadFile(int, uchar &sBuffer[], int, int &OneInt);
 bool InternetCloseHandle(int);
 bool HttpAddRequestHeadersW(int, string, int, int);
 int HttpOpenRequestW(int, string, string, string, string, string, int, int);
-bool HttpSendRequestW(int hRequest, string lpszHeaders, int dwHeadersLength, char &lpOptional[], int dwOptionalLength);
+bool HttpSendRequestW(int hRequest, string lpszHeaders, int dwHeadersLength, uchar &lpOptional[], int dwOptionalLength);
 bool InternetWriteFile(int, uchar &[], int, int &);
 bool InternetQueryDataAvailable(int, int &);
 bool InternetSetOptionW(int, int, int &, int);

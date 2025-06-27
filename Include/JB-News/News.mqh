@@ -15,7 +15,7 @@ int InternetOpenW(string name, int config, string, string, int);
 int InternetOpenUrlW(int, string, string, int, int, int);
 bool InternetReadFile(int, uchar &sBuffer[], int, int &OneInt);
 bool InternetCloseHandle(int);
-bool HttpSendRequestW(int hRequest, string lpszHeaders, int dwHeadersLength, char &lpOptional[], int dwOptionalLength);
+bool HttpSendRequestW(int hRequest, string lpszHeaders, int dwHeadersLength, uchar &lpOptional[], int dwOptionalLength);
 #import
 
 /*
